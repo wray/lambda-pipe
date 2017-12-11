@@ -1,0 +1,11 @@
+version: 0.1
+phases:
+  install:
+    commands:
+    # Add pip install here if needed
+    - aws cloudformation package --template-file lambda-sam.yaml --s3-bucket captech 
+                                   --output-template-file lambda-sam-out.yaml
+artifacts:
+  type: zip
+  files:
+    - lambda-sam-out.yaml
