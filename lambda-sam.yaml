@@ -8,9 +8,4 @@ Resources:
       Handler: index.lambda_handler
       Runtime: python2.7
       CodeUri: ./
-      Events:
-        MyHelloApi:
-          Type: Hello
-          Properties:
-            Path: /HelloResource
-            Method: GET
+ 
