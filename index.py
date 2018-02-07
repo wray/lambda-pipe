@@ -4,7 +4,7 @@ import json
 
 print('Loading function')
 
-
+# Testing pipe
 def lambda_handler(event, context):
     #print("Received event: " + json.dumps(event, indent=2))
     print("value1 = " + event['key1'])
